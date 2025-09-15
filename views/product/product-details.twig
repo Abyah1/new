@@ -1,0 +1,9 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+<h1>{{ product.name }}</h1>
+<img src="{{ product.image }}" alt="{{ product.name }}">
+<p>{{ product.description }}</p>
+<p>السعر: {{ product.price }} ريال</p>
+<a href="/cart/add/{{ product.id }}">أضف إلى السلة</a>
+{% endblock %}
