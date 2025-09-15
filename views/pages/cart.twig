@@ -1,0 +1,15 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+<h2>سلة المشتريات</h2>
+{% if cart.items %}
+  <ul>
+    {% for item in cart.items %}
+      <li>{{ item.name }} - {{ item.price }} ريال</li>
+    {% endfor %}
+  </ul>
+  <p>الإجمالي: {{ cart.total }} ريال</p>
+{% else %}
+  <p>سلتك فارغة</p>
+{% endif %}
+{% endblock %}
