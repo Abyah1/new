@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Milky Way{% endblock %}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  {% include "components/header.twig" %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    {% include "views/partials/footer.twig" %}
+  </footer>
+</body>
+</html>
