@@ -1,0 +1,10 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+<h2>آراء العملاء</h2>
+<ul>
+{% for testimonial in testimonials %}
+  <li>"{{ testimonial.text }}" - {{ testimonial.name }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
