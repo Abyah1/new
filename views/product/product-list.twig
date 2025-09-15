@@ -1,0 +1,10 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+<h1>المنتجات</h1>
+<div class="products">
+{% for product in products %}
+  {% include "components/product-card.twig" with { product: product } %}
+{% endfor %}
+</div>
+{% endblock %}
