@@ -1,6 +1,69 @@
-{% extends "layouts/base.twig" %}
+<!DOCTYPE html>
+<html lang="ar" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milky-Way</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
 
-{% block content %}
-<h1>مرحبا بك في متجر Milky Way</h1>
-<p>اكتشف منتجاتنا الفريدة والجديدة.</p>
-{% endblock %}
+  <!-- بانر رئيسي -->
+  <header class="bg-blue-500 text-white py-20 text-center">
+    <h1 class="text-4xl font-bold mb-4">مرحبا بك في Milky-Way</h1>
+    <p class="text-xl">تصفح منتجاتنا المميزة وتمتع بعروضنا الخاصة</p>
+    <a href="#products" class="mt-6 inline-block bg-white text-blue-500 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">تسوق الآن</a>
+  </header>
+
+  <!-- أقسام المنتجات -->
+  <section class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">أقسامنا</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-gray-100 p-6 rounded shadow text-center hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">منتجات الألبان</h3>
+        <p>أجود أنواع الألبان الطازجة مباشرة من المزارع.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow text-center hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">المخبوزات</h3>
+        <p>خبز طازج ولذيذ يومياً.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow text-center hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">الفواكه والخضار</h3>
+        <p>طازجة ومختارة بعناية من أفضل المزارع.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- منتجات مميزة -->
+  <section id="products" class="py-16 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">منتجات مميزة</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200" alt="منتج 1" class="mb-4 rounded">
+        <h3 class="font-semibold mb-2">منتج 1</h3>
+        <p class="text-gray-600 mb-2">وصف قصير للمنتج.</p>
+        <span class="font-bold text-blue-500">15 ريال</span>
+      </div>
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200" alt="منتج 2" class="mb-4 rounded">
+        <h3 class="font-semibold mb-2">منتج 2</h3>
+        <p class="text-gray-600 mb-2">وصف قصير للمنتج.</p>
+        <span class="font-bold text-blue-500">20 ريال</span>
+      </div>
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/200" alt="منتج 3" class="mb-4 rounded">
+        <h3 class="font-semibold mb-2">منتج 3</h3>
+        <p class="text-gray-600 mb-2">وصف قصير للمنتج.</p>
+        <span class="font-bold text-blue-500">12 ريال</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة -->
+  <footer class="bg-blue-500 text-white py-8 text-center">
+    <p>جميع الحقوق محفوظة &copy; 2025 Milky-Way</p>
+  </footer>
+
+</body>
+</html>
